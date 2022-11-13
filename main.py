@@ -6,13 +6,13 @@ intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 
 
-# imprimir el nombre de usuario del bot que inicio sesion
+# Declare which user is logged in as
 @client.event
 async def on_ready():
   print('Logged in as {0.user}'.format(client))
 
 
-# reaccionar a los comandos de los usuarios
+# Await and respond for commands
 @client.event
 async def on_message(message):
   if message.author == client.user:
@@ -22,5 +22,5 @@ async def on_message(message):
     await handle.interpret(message)
 
 
-# iniciar el bot
-client.run(os.environ['TOKEN'])
+# Run
+client.run(os.environ['GITTO_TOKEN'])
