@@ -1,3 +1,4 @@
+import discord
 from github.user import User
 from github.repo import Repo
 
@@ -8,6 +9,28 @@ async def interpret(command):
   # Greet
   if command.content == '?greet':
     await command.channel.send('Hi! :hand_splayed:')
+    return
+
+  # Help
+  if command.content == '?help':
+    embed = discord.Embed()
+
+    embed.description = '''
+      List of available commands:
+
+      :ballot_box_with_check: `?greet` :arrow_forward: Make Gitto greet.
+      :ballot_box_with_check: `?register` :arrow_forward: Identify yourself as a Github user (receives the Github username as an argument).
+      :ballot_box_with_check: `?unregister` :arrow_forward: Unregister yourself.
+      :ballot_box_with_check: `?info` :arrow_forward: Displays info about the current registered user.
+      :ballot_box_with_check: `?help` :arrow_forward: Displays this box.
+
+      :ballot_box_with_check: `?git init` :arrow_forward: Initializes a Github repository in the current text channel (receives the Github repo link as an argument).
+      :ballot_box_with_check: `?git info` :arrow_forward: Displays info about the current repository.
+      :ballot_box_with_check: `?git close` :arrow_forward: Closes the current repository in the current text channel.
+
+      '''
+
+    await command.channel.send(embed=embed)
     return
 
   # Register user
