@@ -1,7 +1,5 @@
 <div align='center'>
 
-<img src='https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' width='20%'>
-
 # Gitto
 
 [![API](https://img.shields.io/badge/API-discord.py-blue?style=for-the-badge&logo=discord)](https://discordpy.readthedocs.io/en/stable/)
