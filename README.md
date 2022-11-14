@@ -22,7 +22,7 @@ Un bot de Discord para vigilar proyectos de Github en Discord
 
 <div align='center'>
 
-<img src='misc/uml.png' width='80%'>
+<img src='misc/uml.png' width='30%'>
 </div>
 
 ## Replit
