@@ -11,16 +11,17 @@ Un bot de Discord para vigilar proyectos de Github en Discord
 
 ## Requisitos funcionales
 
-1. Identificarse como un usuario de Github.
-2. Abrir un repositorio en un canal de texto en especifico.
-3. Consultar informacion acerca de los usuarios y repositorios activos.
+1. Identificarse como un usuario registrado en la plataforma de Github a través del usuario de Discord (conexión entre ambos usuarios).
+2. Abrir el monitorio de un repositorio de Github en un canal de texto en específico de un servidor de Discord ya creado.
+3. Consultar información acerca de los usuarios y repositorios activos.
 4. Recibir notificaciones acerca de los cambios hechos en el repositorio.
+5. Cerrar el monitorio del repositorio de Github de un canal de texto en específico.
 
 ## Diagrama de clases
 
 <div align='center'>
 
-<img src='misc/uml.png' width='30%'>
+<img src='misc/uml.png' width='90%'>
 </div>
 
 ## Replit
